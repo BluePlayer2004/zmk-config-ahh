@@ -1,0 +1,6 @@
+if SHIELD_PAINID
+
+config ZMK_KEYBOARD_NAME
+    default "pain"
+
+endif # SHIELD_PAINID
