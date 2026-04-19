@@ -3,7 +3,6 @@
 #include "keys_de.h"
 
 / {
-    &studio_unlock
     keymap {
         compatible = "zmk,keymap";
         default_layer {
