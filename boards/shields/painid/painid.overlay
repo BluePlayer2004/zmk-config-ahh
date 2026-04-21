@@ -42,22 +42,11 @@
         rows = <6>;
 
         map = <
-            /* Row1: encoder btn, F1-F12, PrtSc, ScrLk, Pause (17 keys) */
             RC(1,10) RC(2,10) RC(10,2) RC(3,10) RC(10,3) RC(4,10) RC(10,4) RC(5,10) RC(10,5) RC(6,10) RC(10,6) RC(7,10) RC(10,7) RC(8,10) RC(10,8) RC(9,10) RC(10,9)
-
-            /* Row2: F24, ^, 1-0, ß, ´, Bspc, Ins, Home, PgUp, NumLk, /, *, - (20 keys) */
             RC(0,11) RC(1,11) RC(11,1) RC(2,11) RC(11,2) RC(3,11) RC(11,3) RC(4,11) RC(11,4) RC(5,11) RC(11,5) RC(6,11) RC(11,6) RC(7,11) RC(11,7) RC(8,11) RC(11,8) RC(9,11) RC(11,9) RC(11,0)
-
-            /* Row3: F23, Tab, Q-P, Ü, +, Enter, Del, End, PgDn, 7, 8, 9, + (22 keys) */
             RC(0,12) RC(1,12) RC(12,1) RC(2,12) RC(12,2) RC(3,12) RC(12,3) RC(4,12) RC(12,4) RC(5,12) RC(12,5) RC(6,12) RC(12,6) RC(7,12) RC(12,7) RC(8,12) RC(12,8) RC(9,12) RC(12,9) RC(12,0)
-
-            /* Row4: C_Next, CapsLk, A-L, Ö, Ä, #, 4, 5, 6 (17 keys) */
             RC(1,13) RC(13,1) RC(2,13) RC(13,2) RC(3,13) RC(13,3) RC(4,13) RC(13,4) RC(5,13) RC(13,5) RC(6,13) RC(13,6) RC(7,13) RC(13,7) RC(8,13) RC(13,8) RC(9,13)
-
-            /* Row5: C_Play, LShift, <, Y-M, ,, ., -, RShift, Up, 1, 2, 3, Enter (19 keys) */
             RC(0,14) RC(1,14) RC(14,1) RC(2,14) RC(14,2) RC(3,14) RC(14,3) RC(4,14) RC(14,4) RC(5,14) RC(14,5) RC(6,14) RC(14,6) RC(7,14) RC(14,7) RC(8,14) RC(14,8) RC(9,14) RC(14,9)
-
-            /* Row6: C_Prev, LCtrl, LWin, LAlt, Space, RAlt, RWin, RCtrl, Left, Down, Right, 0, , (14 keys) */
             RC(0,15) RC(1,15) RC(15,1) RC(2,15) RC(4,15) RC(15,4) RC(5,15) RC(15,5) RC(6,15) RC(15,6) RC(7,15) RC(8,15) RC(15,8) RC(9,15)
         >;
     };
