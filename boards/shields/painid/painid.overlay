@@ -16,38 +16,39 @@
         compatible = "zmk,kscan-gpio-charlieplex";
         wakeup-source;
 
-    gpios
-        = <&pro_micro 15 GPIO_ACTIVE_HIGH>   /* Col1  */
-        , <&pro_micro 14 GPIO_ACTIVE_HIGH>   /* Col2  */
-        , <&pro_micro 10 GPIO_ACTIVE_HIGH>   /* Col3  */
-        , <&pro_micro 9  GPIO_ACTIVE_HIGH>   /* Col4  */
-        , <&pro_micro 8  GPIO_ACTIVE_HIGH>   /* Col5  */
-        , <&pro_micro 7  GPIO_ACTIVE_HIGH>   /* Col6  */
-        , <&pro_micro 1  GPIO_ACTIVE_HIGH>   /* Col7  */
-        , <&pro_micro 2  GPIO_ACTIVE_HIGH>   /* Col8  */
-        , <&pro_micro 5  GPIO_ACTIVE_HIGH>   /* Col9  */
-        , <&pro_micro 6  GPIO_ACTIVE_HIGH>   /* Col10 */
-        , <&pro_micro 22 GPIO_ACTIVE_HIGH>   /* Row1  */
-        , <&pro_micro 21 GPIO_ACTIVE_HIGH>   /* Row2  */
-        , <&pro_micro 20 GPIO_ACTIVE_HIGH>   /* Row3  */
-        , <&pro_micro 19 GPIO_ACTIVE_HIGH>   /* Row4  */
-        , <&pro_micro 18 GPIO_ACTIVE_HIGH>   /* Row5  */
-        , <&pro_micro 17 GPIO_ACTIVE_HIGH>   /* Row6  */
-        ;
+        gpios
+            = <&pro_micro 0  GPIO_ACTIVE_HIGH>
+            , <&pro_micro 1  GPIO_ACTIVE_HIGH>
+            , <&pro_micro 2  GPIO_ACTIVE_HIGH>
+            , <&pro_micro 3  GPIO_ACTIVE_HIGH>
+            , <&pro_micro 4  GPIO_ACTIVE_HIGH>
+            , <&pro_micro 5  GPIO_ACTIVE_HIGH>
+            , <&pro_micro 6  GPIO_ACTIVE_HIGH>
+            , <&pro_micro 7  GPIO_ACTIVE_HIGH>
+            , <&pro_micro 8  GPIO_ACTIVE_HIGH>
+            , <&pro_micro 9  GPIO_ACTIVE_HIGH>
+
+            , <&pro_micro 16 GPIO_ACTIVE_HIGH>
+            , <&pro_micro 14 GPIO_ACTIVE_HIGH>
+            , <&pro_micro 15 GPIO_ACTIVE_HIGH>
+            , <&pro_micro 18 GPIO_ACTIVE_HIGH>
+            , <&pro_micro 19 GPIO_ACTIVE_HIGH>
+            , <&pro_micro 20 GPIO_ACTIVE_HIGH>
+            ;
     };
 
     default_transform: default_transform {
         compatible = "zmk,matrix-transform";
-        columns = <21>;
+        columns = <10>;
         rows = <6>;
 
         map = <
-            RC(1,10) RC(2,10) RC(10,2) RC(3,10) RC(10,3) RC(4,10) RC(10,4) RC(5,10) RC(10,5) RC(6,10) RC(10,6) RC(7,10) RC(10,7) RC(8,10) RC(10,8) RC(9,10) RC(10,9)
-            RC(0,11) RC(1,11) RC(11,1) RC(2,11) RC(11,2) RC(3,11) RC(11,3) RC(4,11) RC(11,4) RC(5,11) RC(11,5) RC(6,11) RC(11,6) RC(7,11) RC(11,7) RC(8,11) RC(11,8) RC(9,11) RC(11,9) RC(11,0)
-            RC(0,12) RC(1,12) RC(12,1) RC(2,12) RC(12,2) RC(3,12) RC(12,3) RC(4,12) RC(12,4) RC(5,12) RC(12,5) RC(6,12) RC(12,6) RC(7,12) RC(12,7) RC(8,12) RC(12,8) RC(9,12) RC(12,9) RC(12,0)
-            RC(1,13) RC(13,1) RC(2,13) RC(13,2) RC(3,13) RC(13,3) RC(4,13) RC(13,4) RC(5,13) RC(13,5) RC(6,13) RC(13,6) RC(7,13) RC(13,7) RC(8,13) RC(13,8) RC(9,13)
-            RC(0,14) RC(1,14) RC(14,1) RC(2,14) RC(14,2) RC(3,14) RC(14,3) RC(4,14) RC(14,4) RC(5,14) RC(14,5) RC(6,14) RC(14,6) RC(7,14) RC(14,7) RC(8,14) RC(14,8) RC(9,14) RC(14,9)
-            RC(0,15) RC(1,15) RC(15,1) RC(2,15) RC(4,15) RC(15,4) RC(5,15) RC(15,5) RC(6,15) RC(15,6) RC(7,15) RC(8,15) RC(15,8) RC(9,15)
-        >;
+            RC(14, 9) RC(8, 14) RC(14, 8) RC(7, 14) RC(14, 7) RC(6, 14) RC(14, 6) RC(5, 14) RC(14, 5) RC(4, 14) RC(14, 4) RC(1, 14) RC(14, 1) RC(0, 14) RC(14, 0) RC(2, 14) RC(14, 2)
+            RC(9, 15) RC(15, 9) RC(8, 15) RC(15, 8) RC(7, 15) RC(15, 7) RC(6, 15) RC(15, 6) RC(5, 15) RC(15, 5) RC(4, 15) RC(15, 4) RC(1, 15) RC(15, 1) RC(0, 15) RC(15, 0) RC(2, 15) RC(15, 2) RC(3, 15) RC(15, 3) RC(3, 14) RC(14, 3)
+            RC(9, 18) RC(18, 3) RC(8, 18) RC(18, 8) RC(7, 18) RC(18, 7) RC(6, 18) RC(18, 6) RC(5, 18) RC(18, 5) RC(4, 18) RC(18, 4) RC(1, 18) RC(18, 1) RC(0, 18) RC(18, 0) RC(2, 18) RC(18, 2) RC(3, 18) RC(18, 3) RC(3, 19) RC(19, 3)
+            RC(9, 19) RC(8, 19) RC(19, 8) RC(7, 19) RC(19, 7) RC(6, 19) RC(19, 6) RC(5, 19) RC(19, 5) RC(4, 19) RC(19, 4) RC(1, 19) RC(19, 1) RC(0, 19) RC(19, 0) RC(2, 19) RC(19, 2)
+            RC(9, 20) RC(20, 9) RC(8, 20) RC(20, 8) RC(7, 20) RC(20, 7) RC(6, 20) RC(20, 6) RC(5, 20) RC(20, 5) RC(4, 20) RC(20, 4) RC(1, 20) RC(20, 1) RC(0, 20) RC(20, 0) RC(2, 20) RC(20, 2) RC(3, 20)
+            RC(9, 21) RC(21, 9) RC(8, 21) RC(21, 8) RC(21, 6) RC(5, 21) RC(21, 5) RC(4, 21) RC(21, 4) RC(1, 21) RC(21, 0) RC(0, 21) RC(21, 2) RC(2, 21)
+            >;
     };
 };
