@@ -13,7 +13,7 @@
 
     kscan: kscan {
 
-        compatible = "zmk, kscan-gpio-charlieplex";
+        compatible = "zmk,kscan-gpio-charlieplex";
         wakeup-source;
 
         gpios
@@ -38,7 +38,7 @@
     };
 
     default_transform: default_transform {
-        compatible = "zmk, kscan-gpio-charlieplex";
+        compatible = "zmk,kscan-gpio-charlieplex";
         columns = <10>;
         rows = <6>;
 
