@@ -1,20 +1,6 @@
-// GPIO index mapping (verified from PCB traces):
-//  idx  0 = Col1  -> pro_micro pin 15 (P1.06)
-//  idx  1 = Col2  -> pro_micro pin 14 (P1.04)
-//  idx  2 = Col3  -> pro_micro pin 10 (P0.11)
-//  idx  3 = Col4  -> pro_micro pin  9 (P1.00)
-//  idx  4 = Col5  -> pro_micro pin  8 (P0.24)
-//  idx  5 = Col6  -> pro_micro pin  7 (P0.22)
-//  idx  6 = Col7  -> pro_micro pin  1 (P0.06)
-//  idx  7 = Col8  -> pro_micro pin  2 (P0.08)
-//  idx  8 = Col9  -> pro_micro pin  5 (P0.17)
-//  idx  9 = Col10 -> pro_micro pin  6 (P0.20)
-//  idx 10 = Row1  -> pro_micro pin 22 (P1.11)
-//  idx 11 = Row2  -> pro_micro pin 21 (P1.13)
-//  idx 12 = Row3  -> pro_micro pin 20 (P1.15)
-//  idx 13 = Row4  -> pro_micro pin 19 (P0.02)
-//  idx 14 = Row5  -> pro_micro pin 18 (P0.29)
-//  idx 15 = Row6  -> pro_micro pin 17 (P0.31)
+// This file was generated from a template. Edit it to match your keyboard.
+// See https://zmk.dev/docs/development/hardware-integration/new-shield for more
+// instructions.
 
 #include <dt-bindings/zmk/matrix_transform.h>
 
@@ -26,30 +12,32 @@
     };
 
     kscan: kscan {
+
         compatible = "zmk,kscan-gpio-charlieplex";
         wakeup-source;
 
         gpios
-            = <&pro_micro 15 GPIO_ACTIVE_HIGH>   /* idx  0 = Col1  */
-            , <&pro_micro 14 GPIO_ACTIVE_HIGH>   /* idx  1 = Col2  */
-            , <&pro_micro 10 GPIO_ACTIVE_HIGH>   /* idx  2 = Col3  */
-            , <&pro_micro 9  GPIO_ACTIVE_HIGH>   /* idx  3 = Col4  */
-            , <&pro_micro 8  GPIO_ACTIVE_HIGH>   /* idx  4 = Col5  */
-            , <&pro_micro 7  GPIO_ACTIVE_HIGH>   /* idx  5 = Col6  */
-            , <&pro_micro 1  GPIO_ACTIVE_HIGH>   /* idx  6 = Col7  */
-            , <&pro_micro 2  GPIO_ACTIVE_HIGH>   /* idx  7 = Col8  */
-            , <&pro_micro 5  GPIO_ACTIVE_HIGH>   /* idx  8 = Col9  */
-            , <&pro_micro 6  GPIO_ACTIVE_HIGH>   /* idx  9 = Col10 */
-            , <&pro_micro 22 GPIO_ACTIVE_HIGH>   /* idx 10 = Row1  */
-            , <&pro_micro 21 GPIO_ACTIVE_HIGH>   /* idx 11 = Row2  */
-            , <&pro_micro 20 GPIO_ACTIVE_HIGH>   /* idx 12 = Row3  */
-            , <&pro_micro 19 GPIO_ACTIVE_HIGH>   /* idx 13 = Row4  */
-            , <&pro_micro 18 GPIO_ACTIVE_HIGH>   /* idx 14 = Row5  */
-            , <&pro_micro 17 GPIO_ACTIVE_HIGH>   /* idx 15 = Row6  */
+            = <&pro_micro 0  GPIO_ACTIVE_HIGH>
+            , <&pro_micro 1  GPIO_ACTIVE_HIGH>
+            , <&pro_micro 2  GPIO_ACTIVE_HIGH>
+            , <&pro_micro 3  GPIO_ACTIVE_HIGH>
+            , <&pro_micro 4  GPIO_ACTIVE_HIGH>
+            , <&pro_micro 5  GPIO_ACTIVE_HIGH>
+            , <&pro_micro 6  GPIO_ACTIVE_HIGH>
+            , <&pro_micro 7  GPIO_ACTIVE_HIGH>
+            , <&pro_micro 8  GPIO_ACTIVE_HIGH>
+            , <&pro_micro 9  GPIO_ACTIVE_HIGH>
+
+            , <&pro_micro 16 GPIO_ACTIVE_HIGH>
+            , <&pro_micro 14 GPIO_ACTIVE_HIGH>
+            , <&pro_micro 15 GPIO_ACTIVE_HIGH>
+            , <&pro_micro 18 GPIO_ACTIVE_HIGH>
+            , <&pro_micro 19 GPIO_ACTIVE_HIGH>
+            , <&pro_micro 20 GPIO_ACTIVE_HIGH>
             ;
     };
 
-    default_transform: default_transform {
+     default_transform: default_transform {
         compatible = "zmk,matrix-transform";
         columns = <16>;
         rows = <16>;
@@ -82,6 +70,5 @@
             /* Row 6 - Bottom row: Enc Ctrl Win Alt Space AltGr Win Menu Ctrl ← ↓ → | 0 . */
             RC(0,15)  RC(15,0)  RC(1,15)  RC(15,1)  RC(3,15)  RC(4,15)  RC(15,4)  RC(5,15)
             RC(15,5)  RC(6,15)  RC(7,15)  RC(15,7)  RC(8,15)  RC(15,8)
-        >;
     };
 };
