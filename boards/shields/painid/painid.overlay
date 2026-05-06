@@ -70,5 +70,6 @@
             /* Row 6 - Bottom row: Enc Ctrl Win Alt Space AltGr Win Menu Ctrl ← ↓ → | 0 . */
             RC(0,15)  RC(15,0)  RC(1,15)  RC(15,1)  RC(3,15)  RC(4,15)  RC(15,4)  RC(5,15)
             RC(15,5)  RC(6,15)  RC(7,15)  RC(15,7)  RC(8,15)  RC(15,8)
+        >;
     };
 };
