@@ -37,39 +37,39 @@
             ;
     };
 
-     default_transform: default_transform {
+    default_transform: default_transform {
         compatible = "zmk,matrix-transform";
         columns = <16>;
         rows = <16>;
 
         map = <
-            /* Row 1 - Function row: Esc F1-F12 PrtSc ScrLk Pause */
-            RC(1,10)  RC(10,1)  RC(2,10)  RC(10,2)  RC(3,10)  RC(10,3)  RC(4,10)  RC(10,4)
-            RC(5,10)  RC(10,5)  RC(6,10)  RC(10,6)  RC(7,10)  RC(10,7)  RC(8,10)  RC(10,8)
+            /* Row 1 - Function row: Esc F1 F2 F3 F4 F5 F6 F7 F8 F9 F10 F11 F12 PrtSc ScrLk Pause */
+            RC(8,11)  RC(11,8)  RC(7,11)  RC(11,7)  RC(6,11)  RC(11,6)  RC(5,11)  RC(11,5)
+            RC(4,11)  RC(11,4)  RC(1,11)  RC(11,1)  RC(0,11)  RC(11,0)  RC(2,11)  RC(11,2)
 
-            /* Row 2 - Number row: Enc ^ 1-0 ß ´ Bspc | Ins Home PgUp | NumLk / * - */
-            RC(0,11)  RC(11,0)  RC(1,11)  RC(11,1)  RC(2,11)  RC(11,2)  RC(3,11)  RC(11,3)
-            RC(4,11)  RC(11,4)  RC(5,11)  RC(11,5)  RC(6,11)  RC(11,6)  RC(7,11)  RC(11,7)
-            RC(8,11)  RC(11,8)  RC(9,11)  RC(11,9)  RC(9,10)  RC(10,9)
+            /* Row 2 - Number row: Enc(rot) ^ 1 2 3 4 5 6 7 8 9 0 ss acu Bspc Ins Home PgUp NumLk / * Num- */
+            RC(9,12)  RC(12,0)  RC(8,12)  RC(12,8)  RC(7,12)  RC(12,7)  RC(6,12)  RC(12,6)
+            RC(5,12)  RC(12,5)  RC(4,12)  RC(12,4)  RC(1,12)  RC(12,1)  RC(2,12)  RC(0,12)
+            RC(12,9)  RC(12,2)  RC(3,12)  RC(12,3)  RC(3,11)  RC(11,3)
 
-            /* Row 3 - QWERTY: Enc Tab Q-Ü + Enter | Del End PgDn | 7 8 9 + */
-            RC(0,12)  RC(12,0)  RC(1,12)  RC(12,1)  RC(2,12)  RC(12,2)  RC(3,12)  RC(12,3)
-            RC(4,12)  RC(12,4)  RC(5,12)  RC(12,5)  RC(6,12)  RC(12,6)  RC(7,12)  RC(12,7)
-            RC(8,12)  RC(12,8)  RC(9,12)  RC(12,9)  RC(9,13)  RC(13,9)
+            /* Row 3 - QWERTY: Enc(rot) Tab Q W E R T Z U I O P Ü + Enter Del End PgDn Num7 Num8 Num9 Num+ */
+            RC(0,13)  RC(14,0)  RC(1,10)  RC(15,7)  RC(7,13)  RC(6,15)  RC(6,13)  RC(13,6)
+            RC(5,13)  RC(13,5)  RC(4,13)  RC(13,4)  RC(1,13)  RC(13,1)  RC(8,13)  RC(13,8)
+            RC(9,13)  RC(13,2)  RC(3,13)  RC(13,3)  RC(3,14)  RC(14,3)
 
-            /* Row 4 - Home row: Enc Caps A-# | 4 5 6 */
-            RC(0,13)  RC(1,13)  RC(13,1)  RC(2,13)  RC(13,2)  RC(3,13)  RC(13,3)  RC(4,13)
-            RC(13,4)  RC(5,13)  RC(13,5)  RC(6,13)  RC(13,6)  RC(7,13)  RC(13,7)  RC(8,13)
-            RC(13,8)
+            /* Row 4 - Home row: Enc(rot) Caps A S D F G H J K L Ö Ä # Num4 Num5 Num6 */
+            RC(0,14)  RC(7,15)  RC(2,13)  RC(7,14)  RC(14,7)  RC(6,14)  RC(14,6)  RC(5,14)
+            RC(14,5)  RC(4,14)  RC(14,4)  RC(1,14)  RC(14,1)  RC(13,7)  RC(10,8)  RC(2,14)
+            RC(14,2)
 
-            /* Row 5 - Shift row: Enc Shift < Y-Shift Up | 1 2 3 Enter */
-            RC(0,14)  RC(14,0)  RC(1,14)  RC(14,1)  RC(2,14)  RC(14,2)  RC(3,14)  RC(14,3)
-            RC(4,14)  RC(14,4)  RC(5,14)  RC(14,5)  RC(6,14)  RC(14,6)  RC(7,14)  RC(14,7)
-            RC(8,14)  RC(14,8)  RC(9,14)
+            /* Row 5 - Shift row: Enc(rot) LShift < Y X C V B N M , . - RShift Up EncBtn EncBtn Num3 NumEnter */
+            RC(0,15)  RC(10,1)  RC(10,7)  RC(9,14)  RC(14,8)  RC(13,9)  RC(15,5)  RC(5,15)
+            RC(4,15)  RC(15,4)  RC(3,15)  RC(7,10)  RC(15,0)  RC(1,15)  RC(8,14)  RC(9,11)
+            RC(11,9)  RC(8,10)  RC(15,1)
 
-            /* Row 6 - Bottom row: Enc Ctrl Win Alt Space AltGr Win Menu Ctrl ← ↓ → | 0 . */
-            RC(0,15)  RC(15,0)  RC(1,15)  RC(15,1)  RC(3,15)  RC(4,15)  RC(15,4)  RC(5,15)
-            RC(15,5)  RC(6,15)  RC(7,15)  RC(15,7)  RC(8,15)  RC(15,8)
+            /* Row 6 - Bottom row: Enc(rot) LCtrl LWin LAlt Space RAlt RWin Menu RCtrl Left Down Right Num0 Num. */
+            RC(10,2)  RC(2,10)  RC(10,3)  RC(3,10)  RC(10,5)  RC(4,10)  RC(10,6)  RC(6,10)
+            RC(10,9)  RC(9,10)  RC(5,10)  RC(10,4)  RC(8,15)  RC(15,8)
         >;
     };
 };
