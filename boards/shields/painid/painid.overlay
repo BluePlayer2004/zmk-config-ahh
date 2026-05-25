@@ -42,27 +42,27 @@
 
             /* Row 2 - Num: Enc2 ^ 1 2 3 4 5 6 7 8 9 0 ss acu Bspc Ins Home PgUp NumLk / * Num- */
             RC(9,12)  RC(12,9)  RC(8,12)  RC(12,8)  RC(7,12)  RC(12,7)  RC(6,12)  RC(12,6)
-            RC(5,12)  RC(12,5)  RC(4,12)  RC(12,4)  RC(11,3)  RC(12,1)  RC(0,12)  RC(2,12)
-            RC(12,0)  RC(12,2)  RC(3,12)  RC(12,3)  RC(3,11)  RC(1,12)
+            RC(5,12)  RC(12,5)  RC(4,12)  RC(12,4)  RC(1,12)  RC(12,1)  RC(0,12)  RC(12,0)
+            RC(10,4)  RC(3,14)  RC(3,12)  RC(12,3)  RC(3,11)  RC(11,3)
 
             /* Row 3 - QWERTY: Enc3 Tab Q W E R T Z U I O P Ü + Enter Del End PgDn Num7 Num8 Num9 Num+ */
-            RC(0,13)  RC(13,9)  RC(8,13)  RC(13,8)  RC(7,13)  RC(13,7)  RC(6,13)  RC(13,6)
-            RC(5,13)  RC(13,5)  RC(4,13)  RC(13,4)  RC(1,13)  RC(13,1)  RC(1,10)  RC(14,0)
-            RC(9,13)  RC(13,2)  RC(3,13)  RC(13,3)  RC(3,14)  RC(10,1)
+            RC(2,14)  RC(13,9)  RC(8,13)  RC(13,8)  RC(7,13)  RC(13,7)  RC(6,13)  RC(13,6)
+            RC(5,13)  RC(13,5)  RC(4,13)  RC(13,4)  RC(1,13)  RC(13,1)  RC(1,10)  RC(10,8)
+            RC(9,13)  RC(13,2)  RC(3,13)  RC(10,2)  RC(12,2)  RC(2,13)
 
             /* Row 4 - Home: Enc4 Caps A S D F G H J K L Ö Ä # Num4 Num5 Num6 */
             RC(0,14)  RC(8,14)  RC(14,8)  RC(7,14)  RC(14,7)  RC(6,14)  RC(14,6)  RC(5,14)
-            RC(14,5)  RC(4,14)  RC(14,4)  RC(1,14)  RC(14,1)  RC(15,1)  RC(10,8)  RC(2,14)
-            RC(14,2)
+            RC(14,5)  RC(4,14)  RC(14,4)  RC(1,14)  RC(14,1)  RC(15,1)  RC(14,0)  RC(0,13)
+            RC(10,7)
 
             /* Row 5 - Shift: Enc5 LShift < Y X C V B N M , . - RShift Up EncBtn EncBtn Num3 NumEnter */
-            RC(0,15)  RC(14,3)  RC(10,4)  RC(8,15)  RC(7,15)  RC(15,7)  RC(6,15)  RC(5,15)
-            RC(15,4)  RC(15,5)  RC(4,15)  RC(7,10)  RC(1,15)  RC(15,0)  RC(10,2)  RC(9,11)
+            RC(13,3)  RC(14,3)  RC(8,15)  RC(2,12)  RC(7,15)  RC(15,7)  RC(6,15)  RC(15,4)
+            RC(5,15)  RC(15,5)  RC(4,15)  RC(7,10)  RC(1,15)  RC(9,11)  RC(0,15)  RC(15,0)
             RC(11,9)  RC(8,10)  RC(3,15)
 
             /* Row 6 - Bottom: Enc6 LCtrl LWin LAlt Space RAlt RWin Menu RCtrl Left Down Right Num0 Num. */
-            RC(2,13)  RC(2,10)  RC(10,3)  RC(3,10)  RC(10,5)  RC(4,10)  RC(10,6)  RC(6,10)
-            RC(10,9)  RC(9,10)  RC(5,10)  RC(10,7)  RC(9,14)  RC(15,8)
+            RC(10,1)  RC(2,10)  RC(10,3)  RC(3,10)  RC(10,5)  RC(4,10)  RC(10,6)  RC(6,10)
+            RC(10,9)  RC(9,10)  RC(5,10)  RC(14,2)  RC(9,14)  RC(15,8)
         >;
     };
 };
