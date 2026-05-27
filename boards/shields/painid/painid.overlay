@@ -55,14 +55,14 @@
             RC(14,5)  RC(4,14)  RC(14,4)  RC(1,14)  RC(14,1)  RC(15,1)  RC(14,0)  RC(0,13)
             RC(10,7)
 
-            /* Row 5 - Shift: Enc5 LShift < Y X C V B N M , . - RShift Up EncBtn EncBtn Num3 NumEnter */
+            /* Row 5 - Shift: Enc5 LShift < Y X C V B N M , . - RShift Up EncBtn1 EncBtn2 Num3 NumEnter */
             RC(13,3)  RC(14,3)  RC(8,15)  RC(2,12)  RC(7,15)  RC(15,7)  RC(6,15)  RC(15,4)
             RC(5,15)  RC(15,5)  RC(4,15)  RC(7,10)  RC(1,15)  RC(9,11)  RC(0,15)  RC(15,0)
             RC(11,9)  RC(8,10)  RC(3,15)
 
             /* Row 6 - Bottom: Enc6 LCtrl LWin LAlt Space RAlt RWin Menu RCtrl Left Down Right Num0 Num. */
             RC(10,1)  RC(2,10)  RC(10,3)  RC(3,10)  RC(10,5)  RC(4,10)  RC(10,6)  RC(6,10)
-            RC(10,9)  RC(9,10)  RC(5,10)  RC(14,2)  RC(9,14)  RC(15,8)
+            RC(10,9)  RC(9,10)  RC(5,10)  RC(10,0)  RC(0,10)  RC(15,8)
         >;
     };
 };
